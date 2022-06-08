@@ -51,7 +51,7 @@ class UserController {
 
             // params by firstName
             const nameFilter = name
-                ? { firstName: { $regex: name, $options: 'i' } }
+                ? { lastName: { $regex: name, $options: 'i' } }
                 : {};
 
             // search user
